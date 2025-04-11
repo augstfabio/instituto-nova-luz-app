@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instituto Nova Luz - App de Gestão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="https://instituto-nova-luz.vercel.app/logo.jpeg">
+
+    <style>
+        :root {
+            --cor-principal: #ffffff;
+            --cor-secundaria: #F2994A;
+            --cinza: #f4f4f4;
+            --texto: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--cinza);
+            color: var(--texto);
+
+        }
+        
+        header {
+            background-color: var(--cor-principal);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--cinza);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #666;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: var(--cinza);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+
+        .btn-download {
+            background-color: var(--cor-secundaria);
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-download:hover {
+            opacity: 0.9;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 4rem 1rem;
+            gap: 2rem;
+            background-color: var(--cor-principal);
+        }
+
+        .feature {
+            flex: 1 1 280px;
+            max-width: 300px;
+            background-color: var(--cinza);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 2rem;
+            color: var(--cor-secundaria);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+
+            background-color: var(--cinza);
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .btn-download {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Instituto Nova Luz</h1>
+            <p>Associação de apoio a dependentes quimicos de Turiaçu-ma</p>
+        </header>
+
+        <section class="hero">
+            <h2>App para gestão de residentes</h2>
+            <p>Controle residentes, cadastros, histórico e atividades mesmo sem internet. Sincronize os dados quando
+                quiser.
+            </p>
+            <a href="./file/Instituto.apk" class="btn-download" download><i class="fa-solid fa-download"></i> Baixar Aplicativo</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <i class="fa-solid fa-user-check"></i>
+                <h3>Cadastro de Residentes</h3>
+                <p>Adicione, edite e gerencie informações dos residentes com facilidade.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>Funciona Offline</h3>
+                <p>Use o app mesmo sem conexão. Os dados são sincronizados quando houver internet.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Segurança e Privacidade</h3>
+                <p>Todos os dados são protegidos e armazenados com segurança no Firebase.</p>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Instituto Nova Luz — Todos os direitos reservados
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
