@@ -26,9 +26,8 @@
             font-family: 'Segoe UI', sans-serif;
             background-color: var(--cinza);
             color: var(--texto);
-
         }
-        
+
         header {
             background-color: var(--cor-principal);
             padding: 2rem 1rem;
@@ -63,6 +62,13 @@
             margin-inline: auto;
         }
 
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
         .btn-download {
             background-color: var(--cor-secundaria);
             color: #fff;
@@ -72,10 +78,19 @@
             border-radius: 8px;
             text-decoration: none;
             transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .btn-download:hover {
             opacity: 0.9;
+        }
+
+        .version-label {
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            color: #666;
         }
 
         .features {
@@ -105,7 +120,6 @@
         footer {
             text-align: center;
             padding: 2rem 1rem;
-
             background-color: var(--cinza);
             font-size: 0.9rem;
             color: #777;
@@ -116,8 +130,13 @@
                 font-size: 2rem;
             }
 
+            .download-buttons {
+                flex-direction: column;
+            }
+
             .btn-download {
                 width: 100%;
+                justify-content: center;
             }
         }
     </style>
@@ -135,7 +154,21 @@
             <p>Controle residentes, cadastros, histórico e atividades mesmo sem internet. Sincronize os dados quando
                 quiser.
             </p>
-            <a href="./file/Instituto.apk" class="btn-download" download><i class="fa-solid fa-download"></i> Baixar Aplicativo</a>
+            <div class="download-buttons">
+                <div>
+                    <a href="./file/Instituto_v1.1.apk" class="btn-download" download>
+                        <i class="fa-solid fa-download"></i> Versão 1.1
+                    </a>
+                    <div class="version-label">Atualizada</div>
+                </div>
+                <div>
+                    <a href="./file/Instituto_v1.0.apk" class="btn-download" download>
+                        <i class="fa-solid fa-download"></i> Versão 1.0
+                    </a>
+                    <div class="version-label">Versão inicial</div>
+                </div>
+
+            </div>
         </section>
 
         <section class="features">
